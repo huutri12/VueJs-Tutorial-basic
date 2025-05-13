@@ -22,5 +22,8 @@ const submit = () => {
     <form @submit.prevent="submit">
       <button type="submit">Submit</button>
     </form>
+    <br />
+    <input @keyup.enter.alt="submit" placeholder="nhập tên của bạn" />
+    <button @click.shift="submit">Submit</button>
   </div>
 </template>
